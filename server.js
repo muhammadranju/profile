@@ -3,7 +3,7 @@ const http = require("http");
 const app = require("./app/app");
 const server = http.createServer(app);
 
-const port = process.env.post || 5050;
+const port = process.env.PORT || 5050;
 server.listen(port, () => {
     console.log("App is running on http://localhost:" + port);
 });
